@@ -1,0 +1,11 @@
+let colorbit_51bit = colorbit.initColorBit(DigitalPin.P1, BitColorMode.RGB)
+colorbit_51bit.clear()
+colorbit_51bit.setBrightness(32)
+colorbit_51bit.showColorIcon(ColorIcon.FillFull, colorbit.colors(BitColors.Blue))
+basic.pause(200)
+basic.forever(function () {
+    colorbit_51bit.drawColorBit(randint(0, 4), randint(0, 4), colorbit.colors(BitColors.Black))
+    basic.pause(randint(16, 24))
+    colorbit_51bit.drawColorBit(randint(0, 4), randint(0, 4), colorbit.colors(BitColors.Blue))
+    basic.pause(randint(16, 24))
+})
