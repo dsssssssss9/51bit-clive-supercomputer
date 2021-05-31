@@ -1,7 +1,7 @@
 let colorbit_51bit = colorbit.initColorBit(DigitalPin.P1, BitColorMode.RGB)
 colorbit_51bit.clear()
 colorbit_51bit.setBrightness(16)
-colorbit_51bit.showScrollStringColor("Big Clive SuperComputer", colorbit.colors(BitColors.Red))
+colorbit_51bit.showScrollStringColor("Big Clive SuperComputer", colorbit.colors(BitColors.Orange))
 basic.pause(500)
 colorbit_51bit.showColorIcon(ColorIcon.FillFull, colorbit.colors(BitColors.Blue))
 basic.pause(500)
